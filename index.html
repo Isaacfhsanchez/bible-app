@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📖 Bible App</h1>
+            <p class="subtitle">Read and explore God's Word</p>
+        </header>
+
+        <main>
+            <!-- Search Section -->
+            <div class="search-section">
+                <input type="text" id="searchInput" placeholder="Search for a book (e.g., John, Romans)..." class="search-input">
+                <button id="searchBtn" class="search-btn">Search</button>
+            </div>
+
+            <!-- Book Navigation -->
+            <div class="book-nav">
+                <label for="bookSelect">Select Book:</label>
+                <select id="bookSelect" class="book-select">
+                    <option value="">Choose a book...</option>
+                </select>
+            </div>
+
+            <!-- Chapter Navigation -->
+            <div class="chapter-nav" id="chapterNav" style="display: none;">
+                <label for="chapterSelect">Select Chapter:</label>
+                <select id="chapterSelect" class="chapter-select"></select>
+            </div>
+
+            <!-- Verse Display -->
+            <div class="verse-display" id="verseDisplay">
+                <p class="placeholder">Select a book and chapter to view verses</p>
+            </div>
+
+            <!-- Favorites Section -->
+            <div class="favorites-section">
+                <h3>⭐ Favorite Verses</h3>
+                <button id="clearFavBtn" class="clear-fav-btn">Clear All</button>
+                <div id="favoritesList" class="favorites-list">
+                    <p class="placeholder">No favorite verses yet</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Bible App | Built with HTML, CSS & JavaScript</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
